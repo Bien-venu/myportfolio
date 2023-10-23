@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+}
+.bord {
+  border: 1px solid rgb(44, 44, 44);
+}
+p {
+  color: #858585;
+}
+.svg {
+  filter: invert(72%);
+}
+.card:hover .svg {
+  filter: invert(0%);
+  transition: ease-in-out;
+}
+.card-bg {
+  background-color: #141414;
+}
+.moving {
+  position: relative;
+  animation: move 15s linear infinite;
+}
+@keyframes move {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.ii:hover i{
+  color: black;
+}
